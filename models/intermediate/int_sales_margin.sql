@@ -6,7 +6,7 @@ WITH calc AS (
         s.quantity,
         s.quantity * p.purchase_price AS purchase_cost
     FROM {{ ref('stg_raw__sales') }} AS s
-    INNER JOIN {{ ref('stg_raw__product') }} AS p 
+    LEFT JOIN {{ ref('stg_raw__product') }} AS p 
     ON s.products_id = p.products_id
 )
 
