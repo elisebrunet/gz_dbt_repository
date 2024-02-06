@@ -2,7 +2,7 @@ version: 2
 
 source: gwz_raw_data
 name: raw
-models:
+tables:
   - name: product
     columns:
       - name: product_id
