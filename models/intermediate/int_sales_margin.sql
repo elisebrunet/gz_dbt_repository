@@ -10,4 +10,3 @@ WITH purchase_cost AS (
 SELECT 
     revenue - purchase_cost AS margin
 FROM purchase_cost
-LIMIT 10
