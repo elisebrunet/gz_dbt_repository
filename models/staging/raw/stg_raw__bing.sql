@@ -9,7 +9,6 @@ source as (
 renamed as (
 
     select
-        CONCAT(date_date,"_",campaign_key) AS primary_key,
         date_date,
         paid_source,
         campaign_key,
